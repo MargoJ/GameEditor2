@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.margoj.editor2.app.controller.parts.TeleportController">
+   <children>
+      <HBox maxWidth="1.7976931348623157E308" prefHeight="40.0" spacing="5.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" text="Mapa:" HBox.hgrow="NEVER" />
+            <TextField fx:id="fieldMap" prefHeight="30.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="buttonSelectMap" mnemonicParsing="false" prefHeight="30.0" prefWidth="20.0" text="..." HBox.hgrow="NEVER">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox maxWidth="1.7976931348623157E308" prefHeight="40.0" spacing="5.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ToggleButton fx:id="buttonToggle" mnemonicParsing="false" prefHeight="30.0" text="Miejsce spawnu" HBox.hgrow="NEVER" />
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" text="X:" HBox.hgrow="NEVER" />
+            <TextField fx:id="fieldX" prefHeight="30.0" HBox.hgrow="ALWAYS" />
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" text="Y:" HBox.hgrow="NEVER" />
+            <TextField fx:id="fieldY" prefHeight="30.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="buttonSelectPosition" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" text="Zaznacz na mapie" HBox.hgrow="NEVER" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
